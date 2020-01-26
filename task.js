@@ -10,7 +10,7 @@ function showProgress(event) {
 	xhr.open('POST', 'https://netology-slow-rest.herokuapp.com/upload.php');
 	xhr.onprogress = function (event) {
 
-		progress.value = event.loaded / 1000000;
+		progress.value = event.loaded / 10000000;
 	}
 	xhr.send(formData);
 
